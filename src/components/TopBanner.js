@@ -1,13 +1,14 @@
 import React from 'react';
 import { Container, Jumbotron as Jumbo, Figure } from 'react-bootstrap';
-import lemonade from './../assets/imgs/bannerTwo.jpg';
+import table from './../assets/imgs/BannerThree.png';
 import logo from './../assets/imgs/datanadeLogo.png';
 import styled from 'styled-components';
 import './../assets/MyCSS/myCSS.css';
+import { MainCallToAction } from './MainCallToAction';
 
 const BackBanner = styled.div`
     .jumbo {
-        background: url(${lemonade}) no-repeat fixed bottom;
+        background: url(${table}) no-repeat fixed bottom;
         background-size: cover;
         color: black;
         heigth: 400px;
@@ -28,19 +29,22 @@ const BackBanner = styled.div`
 `;
 
 export const TopBanner = () => (
-        <BackBanner>
-            <Jumbo fluid className="jumbo">
-                <div clasName="overlay"></div>
-                <Container>
-                    <h2>When life gives you data</h2>
-                    <Figure className="round-moves">
-                        <Figure.Image
-                            src={logo}
-                            width={240}
-                            height={240}
-                        />
-                    </Figure>
-                </Container>
-            </Jumbo>
-        </BackBanner>
+    <BackBanner>
+        <Jumbo fluid className="jumbo">
+            <div clasName="overlay"></div>
+            <Container>
+                <h2>When life gives you data</h2>
+                <Figure className="round-moves">
+                    <Figure.Image
+                        src={logo}
+                        width={360}
+                        height={360}
+                    />
+                </Figure>
+            </Container>
+        </Jumbo>
+        <Container>
+            <MainCallToAction />
+        </Container>
+    </BackBanner>
 )

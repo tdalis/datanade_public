@@ -34,7 +34,7 @@ export const DashboardAnalytics = () => (
                             At Datanade we visualise your data in interactive dashboards to help your whole team get the full picture from multiple viewpoints.
                         </p>
                         <p className="emphasisP">
-                            We can use your current visualisation tools such as BI applications or create visualisations using Python or other languages.
+                            We can use your current visualisation tools such as PowerbBI or create visualisations using Python or other languages.
                         </p>
                     </Col>
                     <Col sm>

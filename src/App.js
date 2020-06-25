@@ -8,14 +8,12 @@ import { NoMatch } from './NoMatch';
 import { Layout } from './components/Layout';
 import { NavigationBar } from './components/NavigationBar';
 import "./../src/assets/FontAwesomeIcons/Index";
-import { TopBanner } from './components/TopBanner';
 
 function App() {
   return (
     <React.Fragment>
       <NavigationBar />
-      <TopBanner />
-      <Layout>
+      {/* <Layout> */}
         <Router>
           <Switch>
             <Route exact path="/" component={Home} />
@@ -25,7 +23,7 @@ function App() {
             <Route component={NoMatch} />
           </Switch>
         </Router>
-      </Layout>
+      {/* </Layout> */}
     </React.Fragment>
   );
 }

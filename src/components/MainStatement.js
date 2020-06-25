@@ -23,7 +23,6 @@ export const MainStatement = () => (
                         <h2>Datanade is Data Science made simple</h2>
                         <h3>Imagine data analytics helping you make accurate decisions faster;</h3>
                         <h3>It wouldn't be data analytics, it would be Data Science</h3>
-                        
                     </Col>
                     <Col sm>
                         <Figure>
